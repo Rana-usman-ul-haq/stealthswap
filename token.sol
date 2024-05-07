@@ -1,6 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.24;
 
+/*
+Twitter: https://twitter.com/SwapStealth
+Telegram: https://t.me/StealthSwaps
+Gitbook: https://stealth-swap.gitbook.io/stealth-swap/
+*/
+
 abstract contract Context {
     function _msgSender() internal view virtual returns (address) {
         return msg.sender;
