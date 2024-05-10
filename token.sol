@@ -331,6 +331,14 @@ contract StealthSwap is Context, IERC20, Ownable {
         limitPerWallet = _tokens;
     }
 
+    function whiteListFromFee(address account) public onlyOwner {
+        _isExcludedFromFee[account] = true;
+    }
+
+    function includeInFee(address account) public onlyOwner {
+        _isExcludedFromFee[account] = false;
+    }
+
 
     
     }
